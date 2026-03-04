@@ -116,13 +116,14 @@ public class UserService {
     }
 
 
-
     private void sendEmail(String email, String link) {
 
         try {
 
             SimpleMailMessage message =
                     new SimpleMailMessage();
+
+            message.setFrom("internship874@gmail.com");
 
             message.setTo(email);
 
@@ -136,8 +137,7 @@ public class UserService {
 
             System.out.println("EMAIL SENT SUCCESSFULLY");
 
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
 
             System.out.println("EMAIL FAILED");
 
