@@ -70,7 +70,7 @@ public class UserService {
 
 
         String resetLink =
-                "http://localhost:5173/reset-password?token=" + token;
+                "https://jovial-lolly-ed41d8.netlify.app/reset-password?token=" + token;
 
 
         try {
