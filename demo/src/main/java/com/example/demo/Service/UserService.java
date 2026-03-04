@@ -1,6 +1,7 @@
 package com.example.demo.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -147,6 +148,10 @@ public class UserService {
 
         }
 
+    }
+
+    public List<User> getAllUsers() {
+        return repo.findAll();
     }
 
 

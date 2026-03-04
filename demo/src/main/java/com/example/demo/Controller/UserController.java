@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.example.demo.model.User;
 import com.example.demo.Service.UserService;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -56,6 +57,11 @@ public class UserController {
 
         return userService.resetPassword(token, newPassword);
 
+    }
+
+    @GetMapping("/details")
+    public List<User> getAllUsers() {
+        return userService.getAllUsers();
     }
 
 }
