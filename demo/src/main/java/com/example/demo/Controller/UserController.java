@@ -9,8 +9,7 @@ import com.example.demo.Service.UserService;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/user")
-@CrossOrigin(origins = "*") // or 3000
+@RequestMapping("/api/user") // or 3000
 public class UserController {
 
     @Autowired
